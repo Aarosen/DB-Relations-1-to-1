@@ -37,7 +37,7 @@
 		<type label="SET" length="1" sql="SET" quote=""/>
 		<type label="Bit" length="0" sql="bit" quote=""/>
 	</group>
-</datatypes><table x="10" y="10" name="person">
+</datatypes><table x="105" y="51" name="person">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -50,59 +50,40 @@
 <row name="email" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
+<row name="id_ubication" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
 <row name="created_at" null="1" autoincrement="0">
 <datatype>DATETIME</datatype>
 <default>NULL</default></row>
 <row name="updated_at" null="1" autoincrement="0">
 <datatype>DATETIME</datatype>
 <default>NULL</default></row>
-<row name="username_facebook" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
-<default>NULL</default><relation table="facebook" row="username" />
-</row>
-<row name="username_Google+" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
-<default>NULL</default><relation table="Google+" row="username" />
-</row>
-<row name="username_LinkedIn" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
-<default>NULL</default><relation table="LinkedIn" row="username" />
-</row>
-<key type="PRIMARY" name="Fb">
+<key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="208" y="147" name="facebook">
-<row name="username" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
+<table x="264" y="143" name="ubication">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="password" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
+<row name="longitud" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<key type="PRIMARY" name="+">
-<part>username</part>
-</key>
-</table>
-<table x="208" y="224" name="Google+">
-<row name="username" null="1" autoincrement="1">
-<datatype>VARCHAR</datatype>
+<row name="latitud" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="password" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
+<row name="height" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="created_at" null="1" autoincrement="0">
+<datatype>DATETIME</datatype>
+<default>NULL</default></row>
+<row name="updated_at" null="1" autoincrement="0">
+<datatype>DATETIME</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
-<part>username</part>
-</key>
-</table>
-<table x="211" y="308" name="LinkedIn">
-<row name="username" null="1" autoincrement="1">
-<datatype>VARCHAR</datatype>
-<default>NULL</default></row>
-<row name="password" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
-<default>NULL</default></row>
-<key type="PRIMARY" name="LinkedIn">
-<part>username</part>
+<part>id</part>
 </key>
 </table>
 </sql>
